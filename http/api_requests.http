@@ -1,0 +1,32 @@
+POST http://localhost:4000/api/users/login
+Content-Type: application/json
+
+{
+  "email" : "johndoe@example.com",
+  "password" : "rszthwcoA1*1"
+}
+
+###
+
+POST http://localhost:4000/api/conversations
+Content-Type: application/json
+Authorization: Bearer SFMyNTY.g2gDYQFuBgA0be4ZhwFiAAFRgA.gq6l2478IxICYEGuVwE3LzX_HUGuPliDgk-Hi5Z4ddY
+
+{"conversation": {
+  "description": "Description of the conversation"
+}}
+
+###
+
+POST http://localhost:4000/api/users
+Content-Type: application/json
+
+{
+  "user": {
+    "email": "johndoe@example.com",
+    "password": "rszthwcoA1*1",
+    "name": "John Doe",
+    "account_plan": "free",
+    "balance": 0
+  }
+}
